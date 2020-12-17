@@ -1,0 +1,149 @@
+html{
+    background-image:url('../imag/background.jpg');
+    background-size: cover;
+}
+
+body{
+    margin:0;
+    height:100%;
+    background-size:100%100%;
+}
+
+.brand{
+    text-align: center;
+}
+
+.brand button{
+    display: flex;
+    padding: 15px 35px;
+    background: #333333;
+    border: 1px solid #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 50px auto 80px;
+}
+
+/* The navigation bar */
+
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: midnightblue;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #333333;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+.brand{
+    text-align: center;
+}
+
+.catalog{
+    margin: auto;
+}
+
+.catalog h2{
+    margin: 21px auto 40px;
+}
+
+.photo-grid {
+    margin-top: 10px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.photo-grid img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 0px black;
+    float: left;
+    height: 95px;
+    margin-top: initial;
+    padding: 4px;
+    position: relative;
+    transition: all 0.4s ease-in 0s;
+    width: 95px;
+    z-index: 2;
+}
+.photo-grid:nth-child(2n) {
+    transform: translate(0px, 0px) rotate(8deg);
+}
+.photo-grid:nth-child(2n+1) {
+    left: 50%;
+    transform: translate(0px, 0px) rotate(-1deg);
+}
+.photo-grid img:nth-child(3n) {
+    left: 17px;
+    top: -10px;
+    transform: translate(-10px, 0px) rotate(-15deg);
+}
+.photo-grid img:nth-child(5n) {
+    left: -8px;
+    top: 20px;
+}
+.photo-grid img:nth-child(6n) {
+    transform: translate(-10px, -30px) rotate(15deg);
+}
+.photo-grid img:nth-child(9n) {
+    transform: translate(-10px, -30px) rotate(22deg);
+}
+.photo-grid img:hover {
+    box-shadow: 30px 15px 20px rgba(0, 0, 0, 0.6);
+    transform: rotate(360deg) scale(1.5);
+    z-index: 3;
+}
+
+.best{
+margin-top: 150px;
+}
