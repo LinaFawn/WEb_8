@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab7.css">
+    <title>Чат</title>
+
+</head>
+<body>
+
+<main>
+    <section class="chat">
+        <div class="wrapper">
+            <h1 class="chat_txt">Chat</h1>
+            <div class="chat_window" id="chat">
+
+                <template class="msg" id="msg_tmpl">
+                    <div class="msg_send">
+                        <div class="info_msg">
+                            <p class="msg_who"></p>
+                            <p class="msg_when"></p>
+                            <i class="fas fa-times fas-close"></i>
+                        </div>
+                        <div class="msg">
+                            <p class="msg_txt"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <form action="" class="chat_interface">
+                <input type="text" name="" id="chat_input" placeholder="message..">
+                <input type="button" value="send" id="chat_btn">
+            </form>
+        </div>
+    </section>
+</main>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script src="lab7.js"></script>
+</body>
+</html>
