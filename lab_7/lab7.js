@@ -10,9 +10,9 @@ function answer(isExp, text){
         return new Calculator().calculate(text.substring(1))
     }
     else{
-        var answer = first[Math.floor(Math.random()*10)] + " "
-            + second[Math.floor(Math.random()*10)] + " "
-            + third[Math.floor(Math.random()*10)];
+        var answer = adj[Math.floor(Math.random()*10)] + " "
+            + noun[Math.floor(Math.random()*10)] + " "
+            + verb[Math.floor(Math.random()*10)];
         return answer;
     }
 }
@@ -45,9 +45,9 @@ function get_words(path, word){
 }
 
 function init_chat(){
-    first = get_words("dictionary.json", "first");
-    second = get_words("dictionary.json", "second");
-    third = get_words("dictionary.json", "third");
+    adj = get_words("dictionary.json", "first");
+    noun = get_words("dictionary.json", "second");
+    verb = get_words("dictionary.json", "third");
     var input = document.getElementById("chat_input");
     var btn = document.getElementById("chat_btn");
 
@@ -64,6 +64,6 @@ function init_chat(){
 }
 
 
-var first, second, third
+var adj, noun, verb
 init_chat();
 send("Пообщайся со мной!", "Bot", false)
