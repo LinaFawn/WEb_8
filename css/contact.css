@@ -1,3 +1,12 @@
+.form-group {
+    margin: 0 auto;
+    border: 3px solid #EEEEEE;
+    width: 800px;
+    -webkit-birder-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
 .container {
     margin: 0 auto;
     border: 3px solid #EEEEEE;
@@ -20,7 +29,6 @@ textarea {
     background-color: #E5E5F8;
 }
 
-CSS
 p label {
     margin-left: 10px;
     font-style: italic;
@@ -29,6 +37,7 @@ p label {
 
 .name input {
     margin-top: 10px;
+    -webkit-text-fill-color: black;
 }
 
 p label {
